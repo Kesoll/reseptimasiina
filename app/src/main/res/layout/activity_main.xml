@@ -6,49 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello, World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/openCameraButton"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:text="Open Camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/openCameraButton"
+        android:id="@+id/addIngredients"
         android:layout_width="217dp"
         android:layout_height="48dp"
-        android:text="Open Camera"
-        app:layout_constraintBottom_toTopOf="@+id/openLoadPicture"
+        android:layout_marginTop="36dp"
+        android:text="Add ingredients"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/openCameraButton" />
 
     <Button
         android:id="@+id/openRecipes"
         android:layout_width="217dp"
         android:layout_height="48dp"
+        android:layout_marginTop="36dp"
         android:text="Recipes
 "
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openLoadPicture"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/openLoadPicture" />
 
     <Button
         android:id="@+id/openLoadPicture"
         android:layout_width="217dp"
         android:layout_height="48dp"
+        android:layout_marginTop="36dp"
         android:text="Load picture
 "
-        app:layout_constraintBottom_toTopOf="@+id/openRecipes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openCameraButton"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/addIngredients" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
